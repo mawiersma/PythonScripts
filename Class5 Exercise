@@ -1,3 +1,4 @@
+flips = 0
 heads_counter = 0
 tails_counter = 0
 
@@ -5,10 +6,11 @@ def flip_coin():
 	result = random.randrange(0, 1)
 	return result
 
-while flip_coin = 1:
-	heads_counter = heads_counter + 1
-while flip_coin = 0:
-	tails_counter = tails_counter + 1
+while flips <= 100:
+	if flip_coin = 1:
+		heads_counter = heads_counter + 1
+	elif flip_coin = 0:
+		tails_counter = tails_counter + 1
 
 ------------------------------------------------------------------
 
