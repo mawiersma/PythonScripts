@@ -1,0 +1,48 @@
+import time
+import datetime
+import random
+from array import *
+
+heads = [0]
+tails = [0]
+
+def flip_coin():
+    result = random.randrange(0, 2)   
+    return result
+
+def determine_flip():  
+    if len(coin_landed_on) == 0:
+        if coin_landed_on[0] == "tails":
+            return [0, 'tails']
+        elif coin_landed_on[1] == "heads":
+            return [1, 'heads']
+
+flips = 0
+results=array('i',[])
+coin_landed_on = []
+heads = 0
+tails = 0
+heads_total = 0
+tails_total = 0
+
+while flips < 100:
+    
+    results.append(flip_coin())
+    if results[flips] in heads:
+        heads_total = heads_total + 1
+        coin_landed_on.append("heads")
+    elif results[flips] in tails:
+        tails_total = tails_total + 1
+        coin_landed_on.append("tails")
+
+flip = determin_flip()
+if coin_landed_on[flips] == flip:
+    heads = heads + 1
+else:
+    tails = tails + 1
+
+    flips = flips + 1
+    
+print("Number of flips: " + str(flips))
+print("heads: " + str(heads))
+print("tails: " + str(tails))
