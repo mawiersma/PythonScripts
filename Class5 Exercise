@@ -11,3 +11,4 @@ while flips <= 100:
 		heads_counter = heads_counter + 1
 	elif flip_coin = 0:
 		tails_counter = tails_counter + 1
+flips 
