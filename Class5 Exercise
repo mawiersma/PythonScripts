@@ -7,7 +7,7 @@ heads = [0]
 tails = [0]
 
 def flip_coin():
-    result = random.randrange(0, 2)   
+    result = random.randrange(0, 1)   
     return result
 
 def determine_flip():  
@@ -20,7 +20,7 @@ def determine_flip():
 flips = 0
 results=array('i',[])
 coin_landed_on = []
-heads = 0
+heads = 1
 tails = 0
 heads_total = 0
 tails_total = 0
