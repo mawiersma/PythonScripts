@@ -2,9 +2,8 @@ heads_counter = 0
 tails_counter = 0
 
 def flip_coin():
-
-result = random.randrange(0, 1)
-return result
+	result = random.randrange(0, 1)
+	return result
 
 while flip_coin = 1:
 	heads_counter = heads_counter + 1
